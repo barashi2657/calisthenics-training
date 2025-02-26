@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תוכניות אימון קליסטניקס</title>
+    <style>
+        /* עיצוב כללי */
+        body {
+            font-family: "Roboto", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            text-align: center;
+            color: white;
+            direction: rtl;
+        }
+
+        /* סרגל ניווט */
+        nav {
+            background-color: #222;
+            padding: 15px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; /* השאר את הניווט אופקי */
+            justify-content: center; /* מרכז את הכפתורים */
+            flex-wrap: wrap; /* מבטיח שהכפתורים לא ייצפו */
+        }
+
+        nav ul li {
+            margin: 0 20px; /* מרווחים בין הכפתורים */
+        }
+
+        nav ul li a {
+            color: #ff9800;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            color: #ff5722;
+        }
+
+        /* Media Query - תצוגה למובייל */
+        @media (max-width: 768px) {
+            nav ul {
+                padding: 0 10px; /* מוסיף ריווח פנימי */
+                justify-content: space-around; /* מוסיף מרווחים אחידים בין הכפתורים */
+            }
+
+            nav ul li {
+                margin: 0 10px; /* מרווחים קטנים יותר */
+            }
+
+            nav ul li a {
+                font-size: 1em; /* קטין את הגודל כדי להתאים למובייל */
+            }
+        }
+
+        /* כותרת ראשית */
+        #header-section {
+            margin-top: 100px;
+        }
+
+        .h1-head {
+            font-size: 3em;
+        }
+
+        /* תמונה ראשית */
+        .main-image {
+            width: 80%;
+            max-width: 800px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(255, 152, 0, 0.7);
+            margin: 20px 0;
+        }
+
+        /* כפתורי תוכניות האימון (כרטיסים) */
+        .program-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .program-buttons .button-card {
+            background: #333;
+            color: white;
+            border-radius: 10px;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(255, 152, 0, 0.5);
+            cursor: pointer;
+            transition: 0.3s;
+            padding: 20px;
+        }
+
+        .program-buttons .button-card:hover {
+            background: #ff5722;
+            box-shadow: 0 4px 15px rgba(255, 87, 34, 0.7);
+        }
+
+        .program-buttons .button-card img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+
+        .program-buttons .button-card h3 {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- סרגל ניווט -->
+    <nav>
+        <ul>
+            <li><a href="#programs">תוכניות אימון</a></li>
+            <li><a href="#exercises">תרגילים</a></li>
+            <li><a href="#products">מוצרים</a></li>
+            <li><a href="#about">על קליסטניקס</a></li>
+        </ul>
+    </nav>
+
+    <!-- כותרת ראשית -->
+    <div id="header-section">
+        <h1 class="h1-head">תוכניות אימון קליסטניקס</h1>
+        <p>באתר הזה יש תוכניות אימון לפי קבוצות שרירים ולפי תרגילים ברמה גבוהה</p>
+    </div>
+
+    <!-- תמונה ראשית -->
+    <img class="main-image" src="chris-heria2.jpg" alt="אימון קליסטניקס">
+
+    <!-- כפתורי תוכניות האימון ככרטיסים -->
+    <div class="program-buttons">
+        <div class="button-card">
+            <img src="https://res.cloudinary.com/heriapro-production/image/upload/w_450/v1618593281/programs/202267/no9dwzkqifwmvmxujuy3.jpg" alt="כוח">
+            <h3>אימון לפי קבוצות שרירים</h3>
+        </div>
+        <div class="button-card">
+            <img src="https://res.cloudinary.com/heriapro-production/image/upload/w_450/v1671472657/programs/327265/p41gqyfhvxpe6dks7xng.jpg" alt="סיבולת">
+            <h3>אימון לתרגילים ספצפיים</h3>
+        </div>
+        <div class="button-card">
+            <img src="https://via.placeholder.com/60" alt="סיבולת">
+            <h3>אימון לסיבולת</h3>
+        </div>
+        <div class="button-card">
+            <img src="https://via.placeholder.com/60" alt="משקל גוף">
+            <h3>אימון משקל גוף בלבד</h3>
+        </div>
+        <div class="button-card">
+            <img src="https://via.placeholder.com/60" alt="ציוד">
+            <h3>אימון עם ציוד</h3>
+        </div>
+    </div>
+</body>
+</html>
